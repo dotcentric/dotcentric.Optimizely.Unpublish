@@ -11,8 +11,9 @@
     <PackageDescription>Give editors an intuitive way to unpublish content.</PackageDescription>
     <PackageTags>Optimizely Episerver Publish Unpublish dotcentric</PackageTags>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageProjectUrl>https://github.com/dotcentric</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/dotcentric/dotcentric.Optimizely.Unpublish/main/images/dotcentric.jpg</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/dotcentric/dotcentric.Optimizely.Unpublish/</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageIconUrl>https://www.dotcentric.co.uk/globalassets/icon.png</PackageIconUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +22,14 @@
 
   <ItemGroup>
     <PackageReference Include="EPiServer.CMS.UI.Core" Version="[12.0.2, 13.0)" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="..\images\icon.png">
+      <Pack>true</Pack>
+      <PackagePath>\</PackagePath>
+      <Link>icon.png</Link>
+    </None>
   </ItemGroup>
 
   <Import Project="msbuild\Main.proj" />
