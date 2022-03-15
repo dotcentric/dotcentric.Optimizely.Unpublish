@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <PackageId>dotcentric.Optimizely.Unpublish</PackageId>
+    <Version>1.0.0</Version>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Jacob Pretorius</Authors>
+    <Company>dotcentric</Company>
+    <Copyright>Copyright 2022</Copyright>
+    <PackageDescription>Give editors an intuitive way to unpublish content.</PackageDescription>
+    <PackageTags>Optimizely Episerver Publish Unpublish dotcentric</PackageTags>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>https://github.com/dotcentric</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/dotcentric/dotcentric.Optimizely.Unpublish/main/images/dotcentric.jpg</PackageIconUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="msbuild\Main.proj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPiServer.CMS.UI.Core" Version="[12.0.2, 13.0)" />
+  </ItemGroup>
+
+  <Import Project="msbuild\Main.proj" />
+
+</Project>
